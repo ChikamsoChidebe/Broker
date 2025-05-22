@@ -1,16 +1,20 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { FaExchangeAlt, FaUserCircle, FaTachometerAlt, FaSignOutAlt } from 'react-icons/fa';
+import { FaExchangeAlt, FaUserCircle, FaTachometerAlt, FaSignOutAlt, FaSignInAlt } from 'react-icons/fa';
 import { useAuth } from '../contexts/AuthContext';
 import '../styles/BottomNavbar.css';
 
 const BottomNavbar = () => {
-  const { logout } = useAuth();
+  const { user, logout } = useAuth();
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    logout();
-    navigate('/login');
+  const handleAuth = () => {
+    if (user) {
+      logout();
+      navigate('/login');
+    } else {
+      navigate('/login');
+    }
   };
 
   return (
@@ -27,9 +31,18 @@ const BottomNavbar = () => {
         <FaTachometerAlt size={24} />
         <span>Dashboard</span>
       </NavLink>
-      <button className="bottom-nav-link logout-button" onClick={handleLogout}>
-        <FaSignOutAlt size={24} />
-        <span>Logout</span>
+      <button className="bottom-nav-link logout-button" onClick={handleAuth}>
+        {user ? (
+          <>
+            <FaSignOutAlt size={24} />
+            <span>Logout</span>
+          </>
+        ) : (
+          <>
+            <FaSignInAlt size={24} />
+            <span>Login</span>
+          </>
+        )}
       </button>
     </nav>
   );
