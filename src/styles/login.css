@@ -1,7 +1,7 @@
 .login-bg {
   min-height: 100vh;
   width: 100vw;
-  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,7 @@
   width: 370px;
   background: rgba(255,255,255,0.14);
   border-radius: 28px;
-  box-shadow: 0 12px 48px rgba(44,82,130,0.22), 0 2px 8px rgba(44,82,130,0.08);
+  box-shadow: 0 12px 48px rgba(155, 89, 182, 0.22), 0 2px 8px rgba(155, 89, 182, 0.08);
   padding: 44px 36px 36px 36px;
   text-align: center;
   position: relative;
@@ -50,8 +50,8 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #2b6cb0 60%, #38a169 100%);
-  box-shadow: 0 2px 12px rgba(44,82,130,0.10);
+  background: linear-gradient(135deg, var(--gradient-accent) 60%, var(--gradient-end) 100%);
+  box-shadow: 0 2px 12px rgba(155, 89, 182, 0.10);
   animation: logoSpin 2.5s infinite linear;
   display: inline-block;
 }
@@ -65,22 +65,22 @@
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
   font-size: 2.1rem;
   font-weight: 900;
-  color: #2b6cb0;
+  color: var(--gradient-accent);
   letter-spacing: 2px;
   user-select: none;
-  text-shadow: 0 2px 12px rgba(44,82,130,0.10);
+  text-shadow: 0 2px 12px rgba(155, 89, 182, 0.10);
 }
 
 .login-title {
   font-size: 2.1rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--gradient-text);
   margin-bottom: 6px;
   margin-top: 0;
   letter-spacing: 1px;
   text-align: center;
   animation: fadeInDown 1s;
-  text-shadow: 0 2px 12px rgba(44,82,130,0.10);
+  text-shadow: 0 2px 12px rgba(155, 89, 182, 0.10);
 }
 
 @keyframes fadeInDown {
@@ -90,11 +90,11 @@
 
 .login-subtitle {
   font-size: 1.1rem;
-  color: #e0e0e0;
+  color: #dcd6f7;
   margin-bottom: 22px;
   text-align: center;
   animation: fadeInDown 1.2s;
-  text-shadow: 0 2px 12px rgba(44,82,130,0.10);
+  text-shadow: 0 2px 12px rgba(155, 89, 182, 0.10);
 }
 
 .login-group {
@@ -108,7 +108,7 @@
 
 .login-group label {
   font-size: 1rem;
-  color: #b0b0b0;
+  color: #bfb8e9;
   font-weight: 500;
   margin-bottom: 2px;
   letter-spacing: 0.5px;
@@ -119,62 +119,62 @@
   border: 1.5px solid rgba(255,255,255,0.22);
   border-radius: 14px;
   font-size: 1.08rem;
-  color: #22223b;
+  color: var(--gradient-text);
   background: rgba(255,255,255,0.38);
   margin-top: 2px;
   width: 100%;
   transition: border 0.2s, box-shadow 0.2s, background 0.2s;
   outline: none;
   backdrop-filter: blur(8px);
-  box-shadow: 0 1px 4px rgba(44,82,130,0.06);
+  box-shadow: 0 1px 4px rgba(155, 89, 182, 0.06);
   font-family: inherit;
 }
 
 .login-group input:focus {
-  border: 1.5px solid #38a169;
+  border: 1.5px solid var(--gradient-accent);
   background: rgba(255,255,255,0.55);
-  box-shadow: 0 2px 8px rgba(44,82,130,0.08);
+  box-shadow: 0 2px 8px rgba(155, 89, 182, 0.08);
 }
 
 .login-btn {
   padding: 14px 0;
   border: none;
   border-radius: 14px;
-  background: linear-gradient(90deg, #2b6cb0 60%, #38a169 100%);
-  color: #fff;
+  background: linear-gradient(90deg, var(--gradient-accent) 60%, var(--gradient-end) 100%);
+  color: var(--gradient-text);
   font-size: 1.15rem;
   font-weight: 700;
   cursor: pointer;
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
   margin-top: 8px;
-  box-shadow: 0 2px 8px rgba(44,82,130,0.08);
+  box-shadow: 0 2px 8px rgba(155, 89, 182, 0.08);
   letter-spacing: 1px;
   width: 100%;
 }
 
 .login-btn:hover {
-  background: linear-gradient(90deg, #38a169 60%, #2b6cb0 100%);
+  background: linear-gradient(90deg, var(--gradient-end) 60%, var(--gradient-accent) 100%);
   transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 4px 16px rgba(44,82,130,0.13);
+  box-shadow: 0 4px 16px rgba(155, 89, 182, 0.13);
 }
 
 .login-link {
   margin-top: 22px;
   font-size: 1rem;
-  color: #e0e0e0;
+  color: #dcd6f7;
   text-align: center;
-  text-shadow: 0 2px 12px rgba(44,82,130,0.10);
+  text-shadow: 0 2px 12px rgba(155, 89, 182, 0.10);
 }
 
 .login-link a {
-  color: #2b6cb0;
+  color: var(--gradient-accent);
   text-decoration: underline;
   font-weight: 600;
   transition: color 0.2s;
 }
 
 .login-link a:hover {
-  color: #38a169;
+  color: var(--gradient-end);
 }
 
 .login-error {

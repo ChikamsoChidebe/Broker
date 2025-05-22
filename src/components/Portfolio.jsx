@@ -276,7 +276,6 @@ const Portfolio = () => {
         <div className="dashboard-footer-content">
           <span>© {new Date().getFullYear()} Codex Trading Platform</span>
           <span>
-            <a href="/features" className="dashboard-footer-link">Advanced Features</a> | 
             <a href="/account" className="dashboard-footer-link">Account</a> | 
             <a href="/dashboard" className="dashboard-footer-link">Dashboard</a>
           </span>

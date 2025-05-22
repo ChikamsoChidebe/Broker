@@ -1,9 +1,9 @@
 .order-table-container {
     width: 100%;
     margin: 0 auto;
-    background: #fff;
+    background: var(--gradient-end);
     border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 12px rgba(155, 89, 182, 0.06);
     padding: 24px;
 }
 
@@ -16,26 +16,26 @@
 .order-table td {
     padding: 12px 8px;
     text-align: left;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid rgba(155, 89, 182, 0.3);
 }
 
 .order-table th {
-    background: #f7fafc;
+    background: var(--gradient-end);
     font-weight: 600;
-    color: #4a5568;
+    color: var(--gradient-text);
 }
 
 .order-table tr:hover {
-    background: #f1f5f9;
+    background: #b28ddb33;
 }
 
 .order-status.completed {
-    color: #38a169;
+    color: #9b59b6;
     font-weight: 600;
 }
 
 .order-status.pending {
-    color: #d69e2e;
+    color: #b28ddb;
     font-weight: 600;
 }
 
@@ -46,7 +46,7 @@
 
 .no-orders {
     text-align: center;
-    color: #718096;
+    color: #9b59b6;
     font-style: italic;
     padding: 24px 0;
 }

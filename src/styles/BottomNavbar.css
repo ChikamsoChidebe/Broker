@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   height: 60px;
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  background: linear-gradient(90deg, var(--gradient-accent) 0%, var(--gradient-end) 100%);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .bottom-nav-link {
-  color: #ffb347;
+  color: var(--gradient-accent);
   text-decoration: none;
   font-family: 'Georgia', serif;
   font-size: 0.85rem;
@@ -31,13 +31,13 @@
 
 .bottom-nav-link:hover,
 .bottom-nav-link.active {
-  color: #fff176;
+  color: #d1b3ff;
 }
 
 .logout-button {
   background: none;
   border: none;
-  color: #ffb347;
+  color: var(--gradient-accent);
   font-family: 'Georgia', serif;
   font-size: 0.85rem;
   display: flex;
@@ -51,11 +51,14 @@
 }
 
 .logout-button:hover {
-  color: #fff176;
+  color: #d1b3ff;
 }
 .bottom-navbar {
   display: flex;
   /* ...your existing styles... */
+}
+.trade{
+  color: rgb(154, 54, 154);
 }
 
 /* Hide BottomNavbar on screens wider than 900px */

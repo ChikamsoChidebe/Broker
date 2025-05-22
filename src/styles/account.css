@@ -4,11 +4,11 @@
     max-width: 900px;
     margin: 40px auto;
     padding: 32px;
-    background: #fff8e1;
+    background: var(--gradient-end);
     border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(122, 92, 30, 0.2);
+    box-shadow: 0 4px 24px rgba(155, 89, 182, 0.2);
     font-family: 'Georgia', serif;
-    color: #4b3b1b;
+    color: var(--gradient-text);
 }
 
 .account-header {
@@ -21,12 +21,12 @@
 .account-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #5a3e1b;
+    color: var(--gradient-accent);
 }
 
 .account-balance {
     font-size: 1.3rem;
-    color: #7a5c1e;
+    color: #b28ddb;
     font-weight: 600;
 }
 
@@ -38,23 +38,23 @@
 }
 
 .account-detail-item {
-    background: #fff8e1;
+    background: var(--gradient-end);
     padding: 18px 20px;
     border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(122, 92, 30, 0.1);
-    border: 1px solid #d6c68a;
+    box-shadow: 0 1px 4px rgba(155, 89, 182, 0.1);
+    border: 1px solid rgba(155, 89, 182, 0.3);
 }
 
 .account-detail-label {
     font-size: 1rem;
-    color: #7a5c1e;
+    color: #b28ddb;
     margin-bottom: 6px;
     display: block;
 }
 
 .account-detail-value {
     font-size: 1.1rem;
-    color: #4b3b1b;
+    color: var(--gradient-text);
     font-weight: 500;
 }
 
@@ -68,8 +68,8 @@
     padding: 10px 22px;
     border: none;
     border-radius: 6px;
-    background: #7a5c1e;
-    color: #f9f6f1;
+    background: #9b59b6;
+    color: var(--gradient-text);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -77,25 +77,25 @@
 }
 
 .account-action-btn:hover {
-    background: #a67c00;
+    background: #b28ddb;
 }
 
 .account-kyc-prompt, .account-deposit-prompt, .account-lang-prompt {
-    background: #fff8e1;
-    border: 1px solid #d6c68a;
+    background: var(--gradient-end);
+    border: 1px solid rgba(155, 89, 182, 0.3);
     border-radius: 8px;
     padding: 16px;
-    box-shadow: 0 2px 8px rgba(122, 92, 30, 0.15);
-    color: #4b3b1b;
+    box-shadow: 0 2px 8px rgba(155, 89, 182, 0.15);
+    color: var(--gradient-text);
     font-family: 'Georgia', serif;
 }
 
 .account-lang-select {
     font-family: 'Georgia', serif;
-    border: 1px solid #c9b77a;
+    border: 1px solid #b28ddb;
     border-radius: 4px;
     padding: 6px;
-    color: #4b3b1b;
+    color: var(--gradient-text);
 }
 
 .account-summary-cards {
@@ -105,20 +105,20 @@
 }
 
 .account-summary-card {
-    background: #fff8e1;
-    border: 1px solid #d6c68a;
+    background: var(--gradient-end);
+    border: 1px solid rgba(155, 89, 182, 0.3);
     border-radius: 8px;
     padding: 16px;
     flex: 1 1 140px;
-    box-shadow: 0 2px 8px rgba(122, 92, 30, 0.15);
+    box-shadow: 0 2px 8px rgba(155, 89, 182, 0.15);
     text-align: center;
     font-family: 'Georgia', serif;
-    color: #4b3b1b;
+    color: var(--gradient-text);
 }
 
 .account-summary-label {
     font-weight: 600;
-    color: #7a5c1e;
+    color: #b28ddb;
     display: block;
     margin-bottom: 6px;
 }
@@ -129,29 +129,29 @@
 }
 
 .account-summary-value.up {
-    color: #38a169;
+    color: #9b59b6;
 }
 
 .account-plan-card {
-    background: #fff8e1;
-    border: 1px solid #d6c68a;
+    background: var(--gradient-end);
+    border: 1px solid rgba(155, 89, 182, 0.3);
     border-radius: 10px;
     padding: 16px;
     margin-bottom: 12px;
-    box-shadow: 0 2px 8px rgba(122, 92, 30, 0.15);
+    box-shadow: 0 2px 8px rgba(155, 89, 182, 0.15);
     font-family: 'Georgia', serif;
-    color: #4b3b1b;
+    color: var(--gradient-text);
 }
 
 .account-plan-progress {
-    background: #d6c68a;
+    background: #b28ddb;
     border-radius: 6px;
     height: 12px;
     margin: 8px 0;
 }
 
 .account-plan-progress-bar {
-    background: #7a5c1e;
+    background: #9b59b6;
     height: 12px;
     border-radius: 6px;
 }
@@ -160,22 +160,22 @@
     width: 100%;
     border-collapse: collapse;
     font-family: 'Georgia', serif;
-    color: #4b3b1b;
+    color: var(--gradient-text);
 }
 
 .account-tx-table th, .account-tx-table td {
-    border: 1px solid #d6c68a;
+    border: 1px solid rgba(155, 89, 182, 0.3);
     padding: 10px;
     text-align: left;
 }
 
 .account-tx-type.deposit {
-    color: #38a169;
+    color: #b28ddb;
     font-weight: 600;
 }
 
 .account-tx-type.trade {
-    color: #5a3e1b;
+    color: #9b59b6;
     font-weight: 600;
 }
 
@@ -185,12 +185,12 @@
 }
 
 .account-tx-status.completed {
-    color: #38a169;
+    color: #9b59b6;
     font-weight: 600;
 }
 
 .account-tx-status.pending {
-    color: #a67c00;
+    color: #b28ddb;
     font-weight: 600;
 }
 
@@ -201,21 +201,21 @@
 }
 
 .account-referral-link-card, .account-referral-earnings-card {
-    background: #fff8e1;
-    border: 1px solid #d6c68a;
+    background: var(--gradient-end);
+    border: 1px solid rgba(155, 89, 182, 0.3);
     border-radius: 10px;
     padding: 16px;
     flex: 1 1 300px;
-    box-shadow: 0 2px 8px rgba(122, 92, 30, 0.15);
+    box-shadow: 0 2px 8px rgba(155, 89, 182, 0.15);
     font-family: 'Georgia', serif;
-    color: #4b3b1b;
+    color: var(--gradient-text);
 }
 
 .account-ui-list {
     list-style-type: none;
     padding-left: 0;
     font-family: 'Georgia', serif;
-    color: #4b3b1b;
+    color: var(--gradient-text);
 }
 
 .account-ui-list li {

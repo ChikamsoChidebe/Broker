@@ -2,9 +2,9 @@
     max-width: 700px;
     margin: 40px auto;
     padding: 32px;
-    background: #fff;
+    background: var(--gradient-end);
     border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px rgba(155, 89, 182, 0.08);
 }
 
 .notifications-header {
@@ -17,7 +17,7 @@
 .notifications-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #1a202c;
+    color: var(--gradient-text);
 }
 
 .notifications-list {
@@ -28,22 +28,22 @@
 }
 
 .notification-item {
-    background: #f7fafc;
+    background: var(--gradient-end);
     padding: 18px 20px;
     border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    box-shadow: 0 1px 4px rgba(155, 89, 182, 0.03);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .notification-message {
-    color: #2d3748;
+    color: #b28ddb;
     font-size: 1.05rem;
 }
 
 .notification-time {
-    color: #718096;
+    color: #9b59b6;
     font-size: 0.95rem;
 }
 

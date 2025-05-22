@@ -4,9 +4,9 @@
     max-width: 1200px;
     margin: 40px auto;
     padding: 32px;
-    background: #fff;
+    background: var(--gradient-end);
     border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px rgba(155, 89, 182, 0.08);
 }
 
 .reports-header {
@@ -19,7 +19,7 @@
 .reports-title {
     font-size: 2.2rem;
     font-weight: 700;
-    color: #1a202c;
+    color: var(--gradient-text);
 }
 
 .reports-filter {
@@ -30,11 +30,11 @@
 .reports-filter select,
 .reports-filter input[type="date"] {
     padding: 8px 12px;
-    border: 1px solid #cbd5e1;
+    border: 1px solid rgba(155, 89, 182, 0.3);
     border-radius: 6px;
     font-size: 1rem;
-    color: #2d3748;
-    background: #f7fafc;
+    color: #9b59b6;
+    background: var(--gradient-end);
 }
 
 .reports-table {
@@ -47,36 +47,36 @@
 .reports-table td {
     padding: 14px 10px;
     text-align: left;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid rgba(155, 89, 182, 0.3);
 }
 
 .reports-table th {
-    background: #f7fafc;
+    background: var(--gradient-end);
     font-weight: 600;
-    color: #4a5568;
+    color: var(--gradient-text);
 }
 
 .reports-table tr:hover {
-    background: #f1f5f9;
+    background: #b28ddb33;
 }
 
 .report-type {
     font-weight: 600;
-    color: #2b6cb0;
+    color: var(--gradient-accent);
 }
 
 .report-date {
-    color: #718096;
+    color: #b28ddb;
     font-size: 0.98rem;
 }
 
 .report-status.completed {
-    color: #38a169;
+    color: #9b59b6;
     font-weight: 600;
 }
 
 .report-status.pending {
-    color: #d69e2e;
+    color: #b28ddb;
     font-weight: 600;
 }
 
@@ -95,8 +95,8 @@
     padding: 10px 22px;
     border: none;
     border-radius: 6px;
-    background: #2b6cb0;
-    color: #fff;
+    background: var(--gradient-accent);
+    color: var(--gradient-text);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -104,7 +104,7 @@
 }
 
 .reports-action-btn:hover {
-    background: #2c5282;
+    background: #b28ddb;
 }
 
 @media (max-width: 800px) {

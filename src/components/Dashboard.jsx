@@ -13,32 +13,10 @@ const dashboardSections = [
   {
     title: "Welcome to CredoX Trading",
     subtitle: "Trade, invest, and grow your wealth with confidence. Explore your dashboard, manage your portfolio, and start trading!",
-    img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
+    img: "https://static.vecteezy.com/system/resources/previews/006/741/614/non_2x/business-graph-charts-of-financial-concept-stock-market-exchange-trading-graph-analysis-investment-indicator-free-photo.jpg",
     alt: "Trading Hero",
     extra: null,
   },
-  // {
-  //   title: "Live Market Ticker",
-  //   subtitle: "Stay updated with real-time price movements and volatility.",
-  //   img: "https://images.pexels.com/photos/28682357/pexels-photo-28682357/free-photo-of-smartphone-displaying-stock-market-application-data.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //   alt: "Market Ticker",
-  //   extra: (
-  //     <div className="dashboard-ticker-bar" style={{ marginTop: 12, overflowX: 'auto', whiteSpace: 'nowrap' }}>
-  //       <span className="dashboard-ticker-symbol">AAPL</span>
-  //       <span className="dashboard-ticker-price up">+2.15%</span>
-  //       <span className="dashboard-ticker-symbol">TSLA</span>
-  //       <span className="dashboard-ticker-price down">-1.08%</span>
-  //       <span className="dashboard-ticker-symbol">BTC</span>
-  //       <span className="dashboard-ticker-price up">+4.22%</span>
-  //       <span className="dashboard-ticker-symbol">ETH</span>
-  //       <span className="dashboard-ticker-price up">+1.67%</span>
-  //       <span className="dashboard-ticker-symbol">AMZN</span>
-  //       <span className="dashboard-ticker-price down">-0.44%</span>
-  //       <span className="dashboard-ticker-symbol">GOOGL</span>
-  //       <span className="dashboard-ticker-price up">+0.98%</span>
-  //     </div>
-  //   ),
-  // },
   {
     title: "AI Portfolio Insights",
     subtitle: "Get real-time AI-driven suggestions to optimize your portfolio and manage risk.",
@@ -137,34 +115,21 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="dashboard-bg" style={{ minHeight: "100vh", flexDirection: "column", alignItems: "stretch", background: "linear-gradient(135deg, #4b6cb7, #182848)" }}>
+    <div className="dashboard-bg" style={{ minHeight: "100vh", flexDirection: "column", alignItems: "stretch" }}>
       {dashboardSections.map((section, idx) => (
         <section
-          className={`dashboard-section animate-fadein`}
-          style={{
-            maxWidth: 900,
-            margin: "40px auto 32px auto",
-            display: "flex",
-            alignItems: "center",
-            gap: 32,
-            flexWrap: "wrap",
-            background: "rgba(255, 255, 255, 0.1)",
-            borderRadius: 12,
-            padding: 20,
-            boxShadow: "0 8px 24px rgba(0,0,0,0.3)",
-          }}
+          className="dashboard-section animate-fadein"
           key={idx}
         >
           <div style={{ flex: 1, minWidth: 220 }}>
-            <h2 className="dashboard-section-title" style={{ fontSize: "1.7rem", marginBottom: 8 }}>{section.title}</h2>
-            <p className="login-subtitle" style={{ fontSize: "1.08rem", marginBottom: 18 }}>{section.subtitle}</p>
+            <h2 className="dashboard-section-title">{section.title}</h2>
+            <p className="login-subtitle">{section.subtitle}</p>
             {section.extra}
           </div>
           <img
             src={section.img}
             alt={section.alt}
             className="dashboard-hero-img"
-            style={{ minWidth: 180, maxWidth: 260, borderRadius: 12, boxShadow: "0 4px 12px rgba(0,0,0,0.5)" }}
           />
         </section>
       ))}
@@ -173,11 +138,7 @@ const Dashboard = () => {
       <section
         className="dashboard-section animate-fadein"
         style={{
-          maxWidth: 900,
-          margin: "40px auto 32px auto",
           background: "rgba(255, 255, 255, 0.15)",
-          borderRadius: 12,
-          padding: 20,
           boxShadow: "0 8px 24px rgba(0,0,0,0.4)",
         }}
       >
@@ -186,9 +147,6 @@ const Dashboard = () => {
           <button
             className="btn-primary"
             onClick={() => setShowQuickTrade(true)}
-            style={{ padding: "10px 20px", fontSize: "1.1rem", cursor: "pointer", borderRadius: 6, background: "linear-gradient(90deg, #ffb347 0%, #182848 100%)", color: "#f0f0f0", border: "none" }}
-            onMouseOver={e => e.currentTarget.style.background = "linear-gradient(90deg, #182848 0%, #ffb347 100%)"}
-            onMouseOut={e => e.currentTarget.style.background = "linear-gradient(90deg, #ffb347 0%, #182848 100%)"}
           >
             Open Quick Trade
           </button>
@@ -200,7 +158,7 @@ const Dashboard = () => {
               value={tradeSymbol}
               onChange={e => setTradeSymbol(e.target.value)}
               required
-              style={{ flex: "1 1 150px", padding: 10, borderRadius: 6, border: "1.5px solid #ffb347", fontSize: "1rem" }}
+              style={{ flex: "1 1 150px", padding: 10, borderRadius: 6, border: "1.5px solid var(--gradient-accent)", fontSize: "1rem" }}
             />
             <input
               type="number"
@@ -209,12 +167,12 @@ const Dashboard = () => {
               onChange={e => setTradeAmount(e.target.value)}
               min="1"
               required
-              style={{ flex: "1 1 150px", padding: 10, borderRadius: 6, border: "1.5px solid #ffb347", fontSize: "1rem" }}
+              style={{ flex: "1 1 150px", padding: 10, borderRadius: 6, border: "1.5px solid var(--gradient-accent)", fontSize: "1rem" }}
             />
             <select
               value={orderType}
               onChange={e => setOrderType(e.target.value)}
-              style={{ flex: "1 1 150px", padding: 10, borderRadius: 6, border: "1.5px solid #ffb347", fontSize: "1rem" }}
+              style={{ flex: "1 1 150px", padding: 10, borderRadius: 6, border: "1.5px solid var(--gradient-accent)", fontSize: "1rem" }}
             >
               <option value="market">Market</option>
               <option value="limit">Limit</option>
@@ -228,21 +186,19 @@ const Dashboard = () => {
                 min="0"
                 step="0.01"
                 required
-                style={{ flex: "1 1 150px", padding: 10, borderRadius: 6, border: "1.5px solid #ffb347", fontSize: "1rem" }}
+                style={{ flex: "1 1 150px", padding: 10, borderRadius: 6, border: "1.5px solid var(--gradient-accent)", fontSize: "1rem" }}
               />
             )}
             <button
               type="submit"
-              style={{ padding: "10px 20px", borderRadius: 6, background: "linear-gradient(90deg, #ffb347 0%, #182848 100%)", color: "#f0f0f0", border: "none", cursor: "pointer", fontSize: "1.1rem" }}
-              onMouseOver={e => e.currentTarget.style.background = "linear-gradient(90deg, #182848 0%, #ffb347 100%)"}
-              onMouseOut={e => e.currentTarget.style.background = "linear-gradient(90deg, #ffb347 0%, #182848 100%)"}
+              style={{ padding: "10px 20px", borderRadius: 6, background: "linear-gradient(90deg, var(--gradient-accent) 0%, var(--gradient-end) 100%)", color: "var(--gradient-text)", border: "none", cursor: "pointer", fontSize: "1.1rem" }}
             >
               Execute
             </button>
             <button
               type="button"
               onClick={() => setShowQuickTrade(false)}
-              style={{ padding: "10px 20px", borderRadius: 6, background: "#444", color: "#f0f0f0", border: "none", cursor: "pointer", fontSize: "1.1rem" }}
+              style={{ padding: "10px 20px", borderRadius: 6, background: "#444", color: "var(--gradient-text)", border: "none", cursor: "pointer", fontSize: "1.1rem" }}
             >
               Cancel
             </button>
@@ -250,55 +206,13 @@ const Dashboard = () => {
         )}
       </section>
 
-      {/* Integrated Components Section */}
-      {/* <section
-        className="dashboard-section animate-fadein"
-        style={{
-          maxWidth: 900,
-          margin: "40px auto 32px auto",
-          background: "rgba(255, 255, 255, 0.15)",
-          borderRadius: 12,
-          padding: 20,
-          boxShadow: "0 8px 24px rgba(0,0,0,0.4)",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: 24,
-        }}
-      >
-        <div>
-          <h2 className="dashboard-section-title">Portfolio Overview</h2>
-          <Portfolio showPerformanceChart={true} />
-        </div>
-        <div>
-          <h2 className="dashboard-section-title">Market Data</h2>
-          <MarketData data={marketData} />
-        </div>
-        <div>
-          <h2 className="dashboard-section-title">Open Orders</h2>
-          <Orders />
-        </div>
-        <div>
-          <h2 className="dashboard-section-title">Recent Reports</h2>
-          <Reports />
-        </div>
-        <div>
-          <h2 className="dashboard-section-title">Trade</h2>
-          <Trade />
-        </div>
-        <div>
-          <h2 className="dashboard-section-title">Notifications</h2>
-          <Notifications showPreview={true} />
-        </div>
-      </section> */}
-
       {/* Footer */}
-      <footer className="dashboard-footer" style={{ marginTop: 40, padding: 20, background: "rgba(0,0,0,0.6)", color: "#f0f0f0", textAlign: "center", borderRadius: 12 }}>
-        <div className="dashboard-footer-content" style={{ display: "flex", justifyContent: "space-between", maxWidth: 900, margin: "0 auto", flexWrap: "wrap", gap: 12 }}>
+      <footer className="dashboard-footer">
+        <div className="dashboard-footer-content">
           <span>© {new Date().getFullYear()} CredoX Trading Platform</span>
           <span>
-            <a href="/features" className="dashboard-footer-link" style={{ color: "#ffb347", marginRight: 12 }}>Advanced Features</a> | 
-            <a href="/account" className="dashboard-footer-link" style={{ color: "#ffb347", marginRight: 12 }}>Account</a> | 
-            <a href="/portfolio" className="dashboard-footer-link" style={{ color: "#ffb347" }}>Portfolio</a>
+            <a href="/account" className="dashboard-footer-link">Account</a> | 
+            <a href="/portfolio" className="dashboard-footer-link">Portfolio</a>
           </span>
         </div>
       </footer>

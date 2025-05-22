@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fffefa;
-  border-bottom: 1.5px solid #e9e2d0;
+  background: var(--gradient-end);
+  border-bottom: 1.5px solid rgba(155, 89, 182, 0.5);
   padding: 0 32px;
   height: 60px;
   position: sticky;
@@ -15,7 +15,7 @@
   font-family: 'Georgia', serif;
   font-size: 1.7rem;
   font-weight: bold;
-  color: #2b6cb0;
+  color: var(--gradient-accent);
   letter-spacing: 2px;
 }
 
@@ -36,7 +36,7 @@
 .classical-navbar-links a,
 .classical-navbar-links .logout-btn {
   text-decoration: none;
-  color: #274472;
+  color: var(--gradient-text);
   font-size: 1.08rem;
   font-weight: 500;
   padding: 7px 14px;
@@ -49,18 +49,18 @@
 
 .classical-navbar-links a:hover,
 .classical-navbar-links .logout-btn:hover {
-  background: #f5e9c8;
-  color: #bfa14a;
+  background: var(--gradient-accent);
+  color: var(--gradient-end);
 }
 
 .classical-active-link {
-  background: #2b6cb0;
-  color: #fffefa !important;
+  background: var(--gradient-accent);
+  color: white !important;
 }
 
 .logout-btn {
   background: #e53e3e;
-  color: #fffefa !important;
+  color: var(--gradient-text) !important;
   border: none;
   padding: 7px 16px;
   border-radius: 6px;
@@ -78,7 +78,7 @@
   background: none;
   border: none;
   font-size: 2rem;
-  color: #2b6cb0;
+  color: var(--gradient-accent);
   cursor: pointer;
 }
 
@@ -102,8 +102,8 @@
   left: -260px;
   width: 240px;
   height: 100vh;
-  background: #fffefa;
-  box-shadow: 2px 0 16px rgba(44,82,130,0.08);
+  background: var(--gradient-end);
+  box-shadow: 2px 0 16px rgba(155, 89, 182, 0.08);
   z-index: 200;
   padding: 24px 0 0 0;
   transition: left 0.3s cubic-bezier(.68,-0.55,.27,1.55);
@@ -118,7 +118,7 @@
   background: none;
   border: none;
   font-size: 2.1rem;
-  color: #bfa14a;
+  color: var(--gradient-accent);
   position: absolute;
   top: 12px;
   right: 16px;
@@ -141,7 +141,7 @@
   display: block;
   width: 100%;
   padding: 13px 28px;
-  color: #274472;
+  color: var(--gradient-text);
   text-decoration: none;
   font-size: 1.08rem;
   border-radius: 0;
@@ -153,13 +153,13 @@
 
 .classical-mobile-sidebar a:hover,
 .classical-mobile-sidebar .logout-btn:hover {
-  background: #f5e9c8;
-  color: #bfa14a;
+  background: var(--gradient-accent);
+  color: var(--gradient-end);
 }
 
 .classical-mobile-sidebar .logout-btn {
   background: #e53e3e;
-  color: #fffefa !important;
+  color: var(--gradient-text) !important;
   font-weight: 600;
   margin-top: 10px;
 }
@@ -174,6 +174,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(44,82,130,0.10);
+  background: rgba(155, 89, 182, 0.10);
   z-index: 150;
 }

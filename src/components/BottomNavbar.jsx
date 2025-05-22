@@ -20,8 +20,8 @@ const BottomNavbar = () => {
   return (
     <nav className="bottom-navbar">
       <NavLink to="/trade" className={({ isActive }) => (isActive ? 'bottom-nav-link active' : 'bottom-nav-link')}>
-        <FaExchangeAlt size={24} />
-        <span>Trade</span>
+        <FaExchangeAlt size={24} className='trade' />
+        <span className='trade'>Trade</span>
       </NavLink>
       <NavLink to="/account" className={({ isActive }) => (isActive ? 'bottom-nav-link active' : 'bottom-nav-link')}>
         <FaUserCircle size={24} />

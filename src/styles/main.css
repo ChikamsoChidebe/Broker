@@ -1,12 +1,12 @@
 /* Global Gradient Style */
 
 :root {
-  --gradient-start: #4b6cb7;
-  --gradient-end: #182848;
-  --gradient-accent: #ffb347;
-  --gradient-text: #f0f0f0;
-  --gradient-link: #ffb347;
-  --gradient-link-hover: #ffd27f;
+  --gradient-start: #1a0a3d; /* dark purple */
+  --gradient-end: #3a0a5a; /* deeper purple */
+  --gradient-accent: #9b59b6; /* bright purple */
+  --gradient-text: #ffffff; /* white */
+  --gradient-link: #9b59b6; /* bright purple */
+  --gradient-link-hover: #b28ddb; /* lighter purple */
 }
 
 body {
@@ -49,7 +49,7 @@ button, .login-btn {
 }
 
 button:hover, .login-btn:hover {
-  background: #ffcc80;
+  background: #b28ddb;
 }
 
 .app-container {
@@ -60,11 +60,11 @@ button:hover, .login-btn:hover {
 
 .classical-navbar {
   background: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
-  border-bottom: 2px solid rgba(255, 179, 71, 0.5);
+  border-bottom: 2px solid rgba(155, 89, 182, 0.5);
   color: var(--gradient-text);
   font-family: 'Georgia', serif;
   font-size: 1.15rem;
-  box-shadow: 0 2px 12px rgba(255, 179, 71, 0.07);
+  box-shadow: 0 2px 12px rgba(155, 89, 182, 0.07);
   display: flex;
   align-items: center;
   height: 64px;
@@ -163,7 +163,7 @@ button:hover, .login-btn:hover {
   height: 100vh;
   background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
   color: var(--gradient-text);
-  border-right: 2px solid rgba(255, 179, 71, 0.5);
+  border-right: 2px solid rgba(155, 89, 182, 0.5);
   z-index: 1300;
   transition: left 0.35s cubic-bezier(.68,-0.55,.27,1.55);
   padding-top: 64px;
@@ -225,7 +225,7 @@ button:hover, .login-btn:hover {
   padding: 32px;
   background: linear-gradient(135deg, var(--gradient-end), var(--gradient-start));
   border-radius: 18px;
-  border: 1.5px solid rgba(255, 179, 71, 0.5);
+  border: 1.5px solid rgba(155, 89, 182, 0.5);
   box-shadow: 0 4px 24px rgba(75,83,32,0.09);
 }
 
@@ -242,8 +242,8 @@ button:hover, .login-btn:hover {
 .classical-card {
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
   border-radius: 12px;
-  border: 1.5px solid rgba(255, 179, 71, 0.08);
-  box-shadow: 0 2px 12px rgba(255, 179, 71, 0.3);
+  border: 1.5px solid rgba(155, 89, 182, 0.08);
+  box-shadow: 0 2px 12px rgba(155, 89, 182, 0.3);
   padding: 22px 18px;
   margin-bottom: 22px;
   color: var(--gradient-text);
@@ -251,7 +251,7 @@ button:hover, .login-btn:hover {
 
 .classical-footer {
   background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
-  border-top: 2px solid rgba(255, 179, 71, 0.5);
+  border-top: 2px solid rgba(155, 89, 182, 0.5);
   padding: 16px 0;
   text-align: center;
   color: var(--gradient-text);
@@ -293,7 +293,7 @@ button:hover, .login-btn:hover {
 
 input, select, textarea {
   font-family: 'Georgia', serif;
-  border: 1.5px solid rgba(255, 179, 71, 0.5);
+  border: 1.5px solid rgba(155, 89, 182, 0.5);
   border-radius: 6px;
   padding: 8px 12px;
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
@@ -307,7 +307,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 table {
-  border: 1.5px solid rgba(255, 179, 71, 0.5);
+  border: 1.5px solid rgba(155, 89, 182, 0.5);
   border-radius: 8px;
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
   font-family: 'Georgia', serif;
@@ -315,7 +315,7 @@ table {
   border-collapse: collapse;
 }
 th, td {
-  border-bottom: 1px solid rgba(255, 179, 71, 0.5);
+  border-bottom: 1px solid rgba(155, 89, 182, 0.5);
   padding: 8px 12px;
 }
 th {
@@ -325,7 +325,7 @@ th {
   letter-spacing: 0.5px;
 }
 tr:hover {
-  background: rgba(255, 179, 71, 0.15);
+  background: rgba(155, 89, 182, 0.15);
 }
 @media (max-width: 900px) {
   .login-bg {
@@ -344,163 +344,6 @@ tr:hover {
     border-radius: 10px;
   }
 }
-/* Global Gradient Style */
-
-:root {
-  --gradient-start: #4b6cb7;
-  --gradient-end: #182848;
-  --gradient-accent: #ffb347;
-  --gradient-text: #f0f0f0;
-  --gradient-link: #ffb347;
-  --gradient-link-hover: #ffd27f;
-}
-
-body {
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-  color: var(--gradient-text);
-  font-family: 'Georgia', 'Times New Roman', serif;
-  font-size: 1.07rem;
-  letter-spacing: 0.02em;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: var(--gradient-link);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--gradient-link-hover);
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  color: var(--gradient-text);
-  margin-top: 0;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
-}
-
-button, .login-btn {
-  background: var(--gradient-accent);
-  color: var(--gradient-end);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover, .login-btn:hover {
-  background: #ffcc80;
-}
-
-.app-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.classical-navbar {
-  background: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
-  border-bottom: 2px solid rgba(255, 179, 71, 0.5);
-  color: var(--gradient-text);
-  font-family: 'Georgia', serif;
-  font-size: 1.15rem;
-  box-shadow: 0 2px 12px rgba(255, 179, 71, 0.07);
-  display: flex;
-  align-items: center;
-  height: 64px;
-  min-height: 64px;
-  padding: 0 2vw;
-  position: sticky;
-  top: 0;
-  z-index: 1202;
-}
-
-.classical-navbar-logo {
-  font-size: 1.7rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: var(--gradient-text);
-  font-family: 'Georgia', serif;
-  margin-right: 32px;
-  display: flex;
-  align-items: center;
-}
-
-.classical-navbar-links {
-  display: flex;
-  gap: 18px;
-  margin-left: auto;
-  align-items: center;
-  height: 100%;
-}
-
-.classical-navbar-links li {
-  list-style: none;
-}
-
-.classical-navbar-links a,
-.classical-navbar-links .logout-btn {
-  color: var(--gradient-link);
-  text-decoration: none;
-  font-size: 1.08rem;
-  font-family: 'Georgia', serif;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: background 0.2s, color 0.2s;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  height: 100%;
-  line-height: 48px;
-}
-
-.classical-navbar-links a:hover,
-.classical-navbar-links .logout-btn:hover {
-  background: var(--gradient-accent);
-  color: var(--gradient-end);
-}
-
-.classical-active-link {
-  background: var(--gradient-accent);
-  color: var(--gradient-end) !important;
-}
-
-.classical-navbar-menu-btn {
-  background: none;
-  border: none;
-  color: var(--gradient-text);
-  font-size: 2.2rem;
-  cursor: pointer;
-  display: none;
-  position: absolute;      /* Make it absolutely positioned */
-  top: 0px;               /* Align to top */
-  right: 24px;             /* Align to right */
-  margin-left: 0;          /* Remove left margin */
-  z-index: 1203;
-}
-
-@media (max-width: 900px) {
-  .classical-navbar-links {
-    display: none !important;
-  }
-  .classical-navbar-menu-btn {
-    display: block !important;
-  }
-  .classical-container {
-    padding: 12px 2vw;
-    border-radius: 10px;
-  }
-}
-
 /* Responsive typography */
 @media (max-width: 600px) {
   body {
@@ -523,7 +366,6 @@ button:hover, .login-btn:hover {
     font-size: 0.95rem;
   }
 }
-
 /* Responsive container */
 @media (max-width: 480px) {
   .classical-container {
@@ -531,7 +373,6 @@ button:hover, .login-btn:hover {
     margin: 20px 10px;
   }
 }
-
 /* Responsive tables */
 @media (max-width: 600px) {
   table, thead, tbody, th, td, tr {

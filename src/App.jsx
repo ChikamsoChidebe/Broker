@@ -33,7 +33,7 @@ const App = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        background: "linear-gradient(120deg, #fffefa 0%, #e9e2d0 100%)"
+        background: "linear-gradient(135deg, var(--gradient-start), var(--gradient-end))"
       }}>
         <div style={{
           position: "relative",
@@ -53,12 +53,12 @@ const App = () => {
             height: 70,
             transform: "translate(-50%, -50%)",
             borderRadius: "50%",
-            border: "5px solid #ffe9a7",
-            borderTop: "5px solid #bfa14a",
-            borderRight: "5px solid #ffe9a7",
-            borderBottom: "5px solid #ffe9a7",
-            borderLeft: "5px solid #ffe9a7",
-            boxShadow: "0 0 32px 8px #ffe9a7, 0 0 16px 4px #bfa14a",
+            border: "5px solid var(--gradient-accent)",
+            borderTop: "5px solid var(--gradient-end)",
+            borderRight: "5px solid var(--gradient-accent)",
+            borderBottom: "5px solid var(--gradient-accent)",
+            borderLeft: "5px solid var(--gradient-accent)",
+            boxShadow: "0 0 32px 8px var(--gradient-accent), 0 0 16px 4px var(--gradient-end)",
             animation: "spinRing 1.2s linear infinite"
           }} />
           {/* Glowing dot in the center */}
@@ -70,25 +70,25 @@ const App = () => {
             width: 38,
             height: 38,
             borderRadius: "50%",
-            background: "radial-gradient(circle, #fffefa 60%, #bfa14a 100%)",
-            boxShadow: "0 0 40px 16px #bfa14a, 0 0 24px 8px #ffe9a7, 0 0 60px 24px #ffe9a7",
+            background: "radial-gradient(circle, var(--gradient-text) 60%, var(--gradient-end) 100%)",
+            boxShadow: "0 0 40px 16px var(--gradient-end), 0 0 24px 8px var(--gradient-accent), 0 0 60px 24px var(--gradient-accent)",
             animation: "centerPulse 1.3s ease-in-out infinite alternate"
           }} />
         </div>
         <div style={{
           fontFamily: "Georgia, serif",
           fontSize: "1.35rem",
-          color: "#4B5320",
+          color: "var(--gradient-accent)",
           letterSpacing: "1px",
-          textShadow: "0 0 8px #274472"
+          textShadow: "0 0 8px var(--gradient-end)"
         }}>
           Loading CredoX...
         </div>
         <style>
           {`
             @keyframes centerPulse {
-              0% { box-shadow: 0 0 40px 16px #bfa14a, 0 0 24px 8px #ffe9a7, 0 0 60px 24px #ffe9a7; }
-              100% { box-shadow: 0 0 64px 32px #ffe9a7, 0 0 40px 16px #bfa14a, 0 0 90px 36px #bfa14a; }
+              0% { box-shadow: 0 0 40px 16px var(--gradient-end), 0 0 24px 8px var(--gradient-accent), 0 0 60px 24px var(--gradient-accent); }
+              100% { box-shadow: 0 0 64px 32px var(--gradient-accent), 0 0 40px 16px var(--gradient-end), 0 0 90px 36px var(--gradient-end); }
             }
             @keyframes spinRing {
               0% { transform: translate(-50%, -50%) rotate(0deg);}
