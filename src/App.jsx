@@ -82,7 +82,7 @@ const App = () => {
           letterSpacing: "1px",
           textShadow: "0 0 8px #274472"
         }}>
-          Loading Crodex...
+          Loading Credox...
         </div>
         <style>
           {`

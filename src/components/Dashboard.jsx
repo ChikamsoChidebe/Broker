@@ -11,7 +11,7 @@ import "../styles/login.css";
 
 const dashboardSections = [
   {
-    title: "Welcome to Codex Trading",
+    title: "Welcome to CredoX Trading",
     subtitle: "Trade, invest, and grow your wealth with confidence. Explore your dashboard, manage your portfolio, and start trading!",
     img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
     alt: "Trading Hero",
@@ -294,7 +294,7 @@ const Dashboard = () => {
       {/* Footer */}
       <footer className="dashboard-footer" style={{ marginTop: 40, padding: 20, background: "rgba(0,0,0,0.6)", color: "#f0f0f0", textAlign: "center", borderRadius: 12 }}>
         <div className="dashboard-footer-content" style={{ display: "flex", justifyContent: "space-between", maxWidth: 900, margin: "0 auto", flexWrap: "wrap", gap: 12 }}>
-          <span>© {new Date().getFullYear()} Codex Trading Platform</span>
+          <span>© {new Date().getFullYear()} CredoX Trading Platform</span>
           <span>
             <a href="/features" className="dashboard-footer-link" style={{ color: "#ffb347", marginRight: 12 }}>Advanced Features</a> | 
             <a href="/account" className="dashboard-footer-link" style={{ color: "#ffb347", marginRight: 12 }}>Account</a> | 
