@@ -52,7 +52,7 @@ const portfolioSections = [
   {
     title: "Your Portfolio Overview",
     subtitle: "See your current holdings, asset allocation, and total portfolio value at a glance.",
-    img: "https://images.pexels.com/photos/669365/pexels-photo-669365.jpeg?auto=compress&w=600&q=80",
+    img: "https://images.pexels.com/photos/7567228/pexels-photo-7567228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     alt: "Portfolio Overview",
     extra: (
       <div className="portfolio-value-card animate-pop">
