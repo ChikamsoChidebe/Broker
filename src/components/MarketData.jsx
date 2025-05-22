@@ -29,7 +29,7 @@ ChartJS.register(
 // Example market data
 const trending = [
   {
-    symbol: "AAPL",
+    symbol: "APL",
     name: "Apple Inc.",
     price: 195.2,
     change: "+2.15%",
@@ -49,7 +49,7 @@ const trending = [
     name: "Bitcoin",
     price: 67000,
     change: "+4.22%",
-    img: "/assets/bitcoin.png",
+    img: "bitcoin.png",
     trend: "up",
   },
   {
@@ -57,7 +57,7 @@ const trending = [
     name: "Ethereum",
     price: 3400,
     change: "+1.67%",
-    img: "/assets/ethereum.png",
+    img: "ethereum.png",
     trend: "up",
   },
 ];
