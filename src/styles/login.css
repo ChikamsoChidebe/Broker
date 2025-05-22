@@ -1,0 +1,190 @@
+.login-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInBg 1.2s;
+  overflow: auto;
+}
+
+@keyframes fadeInBg {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.login-card {
+  width: 370px;
+  background: rgba(255,255,255,0.14);
+  border-radius: 28px;
+  box-shadow: 0 12px 48px rgba(44,82,130,0.22), 0 2px 8px rgba(44,82,130,0.08);
+  padding: 44px 36px 36px 36px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(22px);
+  border: 2.5px solid rgba(255,255,255,0.22);
+  transition: box-shadow 0.3s, border 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: popIn 0.9s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.85) translateY(40px);}
+  60% { opacity: 1; transform: scale(1.05) translateY(-8px);}
+  100% { opacity: 1; transform: scale(1) translateY(0);}
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  gap: 12px;
+}
+
+.login-logo-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2b6cb0 60%, #38a169 100%);
+  box-shadow: 0 2px 12px rgba(44,82,130,0.10);
+  animation: logoSpin 2.5s infinite linear;
+  display: inline-block;
+}
+
+@keyframes logoSpin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.login-logo-text {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: #2b6cb0;
+  letter-spacing: 2px;
+  user-select: none;
+  text-shadow: 0 2px 12px rgba(44,82,130,0.10);
+}
+
+.login-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+  margin-top: 0;
+  letter-spacing: 1px;
+  text-align: center;
+  animation: fadeInDown 1s;
+  text-shadow: 0 2px 12px rgba(44,82,130,0.10);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.login-subtitle {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 22px;
+  text-align: center;
+  animation: fadeInDown 1.2s;
+  text-shadow: 0 2px 12px rgba(44,82,130,0.10);
+}
+
+.login-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.login-group label {
+  font-size: 1rem;
+  color: #b0b0b0;
+  font-weight: 500;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+}
+
+.login-group input {
+  padding: 14px 16px;
+  border: 1.5px solid rgba(255,255,255,0.22);
+  border-radius: 14px;
+  font-size: 1.08rem;
+  color: #22223b;
+  background: rgba(255,255,255,0.38);
+  margin-top: 2px;
+  width: 100%;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+  outline: none;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 4px rgba(44,82,130,0.06);
+  font-family: inherit;
+}
+
+.login-group input:focus {
+  border: 1.5px solid #38a169;
+  background: rgba(255,255,255,0.55);
+  box-shadow: 0 2px 8px rgba(44,82,130,0.08);
+}
+
+.login-btn {
+  padding: 14px 0;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #2b6cb0 60%, #38a169 100%);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(44,82,130,0.08);
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #38a169 60%, #2b6cb0 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(44,82,130,0.13);
+}
+
+.login-link {
+  margin-top: 22px;
+  font-size: 1rem;
+  color: #e0e0e0;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(44,82,130,0.10);
+}
+
+.login-link a {
+  color: #2b6cb0;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.login-link a:hover {
+  color: #38a169;
+}
+
+.login-error {
+  color: #e53e3e;
+  font-weight: 600;
+  text-align: center;
+  margin: 12px 0;
+  animation: fadeIn 1.2s;
+  background: rgba(255,255,255,0.25);
+  border-radius: 8px;
+  padding: 8px 0;
+  box-shadow: 0 1px 4px rgba(229,62,62,0.08);
+}

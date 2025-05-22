@@ -1,0 +1,62 @@
+.order-table-container {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 24px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.order-table th {
+    background: #f7fafc;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.order-table tr:hover {
+    background: #f1f5f9;
+}
+
+.order-status.completed {
+    color: #38a169;
+    font-weight: 600;
+}
+
+.order-status.pending {
+    color: #d69e2e;
+    font-weight: 600;
+}
+
+.order-status.failed, .order-status.cancelled {
+    color: #e53e3e;
+    font-weight: 600;
+}
+
+.no-orders {
+    text-align: center;
+    color: #718096;
+    font-style: italic;
+    padding: 24px 0;
+}
+
+@media (max-width: 800px) {
+    .order-table-container {
+        padding: 8px;
+    }
+    .order-table th, .order-table td {
+        padding: 8px 4px;
+        font-size: 0.95rem;
+    }
+}
