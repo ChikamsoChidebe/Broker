@@ -29,7 +29,7 @@ ChartJS.register(
 // Example market data
 const trending = [
   {
-    symbol: "APL",
+    symbol: "AAPL",
     name: "Apple Inc.",
     price: 195.2,
     change: "+2.15%",
